@@ -1,0 +1,60 @@
+%body{
+    background: #b92b27;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+/*FONT AND COLORS*/
+$todoColor:rgb(109, 109, 201);
+$MainColor:rgb(147, 147, 170);
+$rowColor:red;
+$fontWeights:(
+    "reg":100,
+    "mid":600,
+    "bold":900
+);
+$h1Fontsize:35px;
+$MainFontsize:28px;
+$SecondaryFontsize:22px;
+$OswaldFont: 'Oswald', sans-serif;
+$TradeFont: 'Trade Winds', cursive;
+
+%btn{
+    font-size: $SecondaryFontsize;
+    font-family: $TradeFont;
+    background-color: $MainColor;
+}
+
+/*FONT AND COLORS*/
+/*Budget*///////////////////////////////////////////////////
+
+%budget{
+    color:white;
+    h1{
+        font-size: $h1Fontsize;
+        font-family: $OswaldFont;
+        
+    }
+    p{
+        font-size: $MainFontsize;
+        font-family: $TradeFont;
+    }
+}
+
+/**/////////////////////////////////////////////////////
+
+/*todo*/////////////////////////////////////////////////////
+
+
+%MainFont{
+    font-size: $MainFontsize;
+    font-family: $OswaldFont;
+}
+
+/*Secondary Font*/
+
+
+%SecondaryFont{
+    font-size: $SecondaryFontsize;
+    font-family: $TradeFont;
+}
+/**/////////////////////////////////////////////////////

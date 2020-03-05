@@ -1,0 +1,19 @@
+@import './vars.scss';
+
+.budget{
+   @extend %budget;
+   input{
+    border-radius: 5px;
+    padding: 8px 14px;
+    margin: 8px 0;
+    box-sizing: border-box;
+   }
+
+   .btn{
+       @extend %btn;
+   }
+
+   .btn:hover{
+       background-color: white;
+   }
+}

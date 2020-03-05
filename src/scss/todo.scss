@@ -1,0 +1,60 @@
+@import './vars.scss';
+
+
+@function weight($name){
+    @return map-get($fontWeights, $name);
+}
+
+
+body{
+    @extend %body
+}
+
+.todo{
+    background-color: $todoColor;
+    font-size: $MainFontsize;
+    /*Main*/
+    .main{
+        @extend %MainFont;
+        font-weight: weight("bold");
+        background-color: $MainColor;
+        .tol{
+            font-size: $MainFontsize;
+            cursor: pointer;
+         }
+    }
+
+    /*second*/
+    .secondry{
+        @extend %SecondaryFont;
+        font-weight: weight("reg");
+        background-color: $rowColor;
+        .tol{
+            font-size: $SecondaryFontsize;
+            cursor: pointer;
+         }
+         .tol:hover{
+            color: white
+         }
+           
+    }
+    .secondry:hover{
+        background-color: $todoColor;
+        
+    }
+
+    /*Third*/
+    .third{
+        font-weight: weight("mid");
+        font-family: 'Oswald', sans-serif
+    }
+    
+
+    .withLine{
+        text-decoration-line: line-through;
+        background-color: $todoColor;
+    }
+    .none{
+    text-decoration-line: none;
+    }
+}

@@ -8,7 +8,7 @@ A Webpack bundler&task runner.
 Little bit of unit testing with Mocha and E2E with Cyprees.
 
 
-You can contribute as much as you can! 
+You can contribute as much as you can! !
 ```
 
 ### Compiles and hot-reloads for development
